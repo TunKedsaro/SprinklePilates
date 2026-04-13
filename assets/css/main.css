@@ -1634,7 +1634,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #0090c5;
+		background: #00c514;
 		color: #fff;
 		text-decoration: none;
 		border-radius: 6px;
@@ -2506,10 +2506,23 @@ input, select, textarea {
 				}
 
 		/* Image */
-
 			.image.left {
 				width: 25%;
 				margin-bottom: 2em !important;
+			}
+
+			.image.centered {
+				margin: 0 auto;
+				width: 100%;
+				max-width: 420px;
+				height: auto;
+			}
+
+			.follow-us-img img {
+				margin: 0 auto;
+				width: 100%;
+				max-width: 320px;
+				height: auto;
 			}
 
 		/* Menu */
@@ -2686,3 +2699,61 @@ input, select, textarea {
 			}
 
 	}
+		
+
+	/* ===== Social Icons ===== */
+	.social-icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		margin-top: 1.5em;
+		padding: 0;
+		list-style: none;
+	}
+
+	.social-icons li {
+		list-style: none;
+	}
+
+	.social-icons a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #222;
+		color: #fff;
+		font-size: 1.2em;
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+
+	/* Hover effect */
+	.social-icons a:hover {
+		background: #0090c5;
+		transform: translateY(-3px);
+	}
+
+	/* Optional: brand colors */
+	.social-icons a.fa-facebook-f { background: #1877f2; }
+	.social-icons a.fa-instagram { background: #e4405f; }
+	.social-icons a.fa-tiktok { background: #000; }
+	.social-icons a.fa-line { background: #06c755; }
+    .social-icons a.fa-youtube {background: #ff0000;}
+	/* Mobile size adjustment */
+	@media screen and (max-width: 736px) {
+		.social-icons a {
+			width: 40px;
+			height: 40px;
+			font-size: 1em;
+		}
+	}
+
+	.map-container {
+	margin-top: 2em;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
